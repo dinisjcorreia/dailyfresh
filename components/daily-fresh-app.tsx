@@ -17,23 +17,36 @@ import {
   SelectValue,
 } from "@/components/ui/select"
 
-const mockRecipes = [
+interface Recipe {
+  id: number;
+  name: string;
+  calories: number;
+  protein: number;
+  carbs: number;
+  fat: number;
+  cost: number;
+  image: string;
+}
+
+const mockRecipes: Recipe[] = [
   { id: 1, name: "Salada de Frango Grelhado", calories: 350, protein: 30, carbs: 15, fat: 20, cost: 8.50, image: "/placeholder.svg?height=80&width=80" },
   { id: 2, name: "Salteado Vegetariano", calories: 300, protein: 15, carbs: 40, fat: 10, cost: 7.25, image: "/placeholder.svg?height=80&width=80" },
   { id: 3, name: "Salmão com Legumes Assados", calories: 400, protein: 35, carbs: 20, fat: 25, cost: 12.00, image: "/placeholder.svg?height=80&width=80" },
-]
+];
 
 export function DailyFreshAppComponent() {
-  const [selectedRecipe, setSelectedRecipe] = useState(null)
+  
+  
+  const [selectedRecipe, setSelectedRecipe] = useState<Recipe | null>(null);
   const [dietPreference, setDietPreference] = useState("")
   const [calorieGoal, setCalorieGoal] = useState("")
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [activeTab, setActiveTab] = useState("recipes")
 
-  const handleRecipeSelect = (recipe) => {
-    setSelectedRecipe(recipe)
-    setActiveTab("delivery")
-  }
+  const handleRecipeSelect = (recipe: Recipe) => {
+    setSelectedRecipe(recipe);
+    setActiveTab("delivery");
+  };
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
