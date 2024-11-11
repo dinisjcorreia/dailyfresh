@@ -37,7 +37,7 @@ const mockRecipes: Recipe[] = [
     carbs: 15,
     fat: 20,
     cost: 8.5,
-    image: "/placeholder.svg?height=80&width=80",
+    image: "/saladadefrangogrelhado.jpeg",
   },
   {
     id: 2,
@@ -47,7 +47,7 @@ const mockRecipes: Recipe[] = [
     carbs: 40,
     fat: 10,
     cost: 7.25,
-    image: "/placeholder.svg?height=80&width=80",
+    image: "/salteadovegetariano.jpg",
   },
   {
     id: 3,
@@ -57,7 +57,7 @@ const mockRecipes: Recipe[] = [
     carbs: 20,
     fat: 25,
     cost: 12.0,
-    image: "/placeholder.svg?height=80&width=80",
+    image: "/salmaocomlegumesassados.jpeg",
   },
 ];
 
@@ -234,7 +234,7 @@ export function DailyFreshAppComponent() {
                           onClick={() => handleRecipeSelect(recipe)}
                         >
                           <CardContent className="p-4 flex items-center">
-                            <Image
+                            <img
                               src={recipe.image}
                               alt={recipe.name}
                               width={80}
@@ -270,7 +270,7 @@ export function DailyFreshAppComponent() {
                     {selectedRecipe ? (
                       <div>
                         <div className="flex items-center mb-4">
-                          <Image
+                          <img
                             src={selectedRecipe.image}
                             alt={selectedRecipe.name}
                             width={60}
@@ -309,7 +309,7 @@ export function DailyFreshAppComponent() {
                     {selectedRecipe ? (
                       <div>
                         <div className="flex items-center mb-4">
-                          <Image
+                          <img
                             src={selectedRecipe.image}
                             alt={selectedRecipe.name}
                             width={60}
@@ -348,7 +348,7 @@ export function DailyFreshAppComponent() {
                     {selectedRecipe ? (
                       <div>
                         <div className="flex items-center mb-4">
-                          <Image
+                          <img
                             src={selectedRecipe.image}
                             alt={selectedRecipe.name}
                             width={60}
