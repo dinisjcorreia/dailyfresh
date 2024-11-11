@@ -63,7 +63,7 @@ export function DailyFreshAppComponent() {
           <header className="flex justify-between items-center mb-6">
             <div className="flex items-center gap-2">
               <Image
-                src="/placeholder.svg?height=32&width=32"
+                src="/Logo_NoText.svg?height=32&width=32"
                 alt="Logótipo DailyFresh"
                 width={32}
                 height={32}
