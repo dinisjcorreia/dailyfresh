@@ -363,7 +363,7 @@ export function DailyFreshAppComponent() {
                           {selectedRecipe.cost.toFixed(2)}€
                         </p>
                         <p className="mt-2 text-sm">
-                          Este preço é otimizado com base nas taxas de mercado
+                          Este preço é otimizado com base nos preços de mercado
                           atuais e descontos disponíveis.
                         </p>
                       </div>
