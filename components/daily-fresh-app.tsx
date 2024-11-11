@@ -47,7 +47,7 @@ const mockRecipes: Recipe[] = [
     carbs: 40,
     fat: 10,
     cost: 7.25,
-    image: "/salteadovegetariano.jpg",
+    image: "/salteadovegetariano.jpeg",
   },
   {
     id: 3,
