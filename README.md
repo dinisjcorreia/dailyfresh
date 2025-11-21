@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# DailyFresh (`https://dailyfresh.vercel.app/`)
 
-## Getting Started
+DailyFresh brings personalized recipes, nutrition tracking, and ingredient delivery together in a mobile-first experience.
 
-First, run the development server:
+# Key features
+- Recipe suggestions with nutritional info and estimated cost.
+- Recipe selection with tabbed navigation (Recipes, Delivery, Nutrition, Costs).
+- CTA prepared for scheduling ingredient delivery.
+- Mobile-optimized interface with a green theme.
 
+## Tech stack
+- Next.js 14 / React 18 / TypeScript
+- Tailwind CSS + Radix UI (Tabs, Select, Inputs, Buttons)
+
+## Prerequisites
+- Node.js 18+ and npm
+
+## Quick start
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
+Open http://localhost:3000 to view the app.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Useful scripts
+- `npm run dev` — development server with hot reload.
+- `npm run lint` — lint the codebase with ESLint.
+- `npm run build` — production build for Next.js.
+- `npm run start` — run the local production server (after build).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Project structure
+- `app/` — routing, base layout, and global styles.
+  - `app/layout.tsx` — metadata, fonts, HTML shell.
+  - `app/page.tsx` — mounts the main component.
+- `components/daily-fresh-app.tsx` — main application UI.
+- `components/ui/` — UI primitives (button, input, tabs, select, etc).
+- `public/` — static assets (logo, recipe images).
+- `lib/utils.ts` — shared utilities (e.g., `cn` for class merging).
